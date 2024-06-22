@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <body style="background-image: url('japan_no.1.jpg'); background-size: cover;">
+    <section class="game">
+        <!-- Title -->
+        <div class="title">Rock-Paper-Scissors</div>
+        
+        <!-- Display Score of Player and Computer -->
+        <div class="score">
+            <div class="playerScore">
+                <h2>Player</h2>
+                <p class="p-count count">0</p>
+            </div>
+            <div class="computerScore">
+                <h2>Computer</h2>
+                <p class="c-count count">0</p>
+            </div>
+        </div>
+        
+        <!-- Number of Moves Left Before Game Ends -->
+        <div class="movesleft">Moves Left: 10</div>
+        
+        <!-- Options Available to Player to Play Game -->
+        <div class="options">
+            <img src="rock.gif" alt="Rock" class="rock" width="150" height="150">
+            <img src="chika.gif" alt="Paper" class="paper" width="150" height="150">
+            <img src="gwen.gif" alt="Scissors" class="scissor" width="150" height="150">
+        </div>
+        
+        <!-- Final Result of Game -->
+        <div class="result"></div>
+        
+        <!-- Reload the Game -->
+        <button class="reload">Reload</button>
+    </section>
+    
+    <!-- Popup -->
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span class="close-button">&times;</span>
+            <p id="popup-message"></p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
